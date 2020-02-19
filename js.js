@@ -23,7 +23,7 @@ function createNewListElement( ) {
 
 function addListAfterClick() {
     if (inputLength() > 0 ) {
-    createNewListElement();
+    createNewListElement()
     }
 }
 // add task to list after click
@@ -34,11 +34,29 @@ function addListAfterKeyPress() {
     }
 }
 //add task after keypress
+let KeyPressEvent = input.addEventListener("keypress", addListAfterKeyPress); 
 
-button.addEventListener("click", addListAfterClick);
     
+//onclick event
+let ClickPressEvent = button.addEventListener("click", addListAfterClick);
 
-input.addEventListener("keypress", addListAfterKeyPress); 
+
+// get => {
+    
+// document.getElementByClassName("lists").style.backgroundcolor="red";
+// }
+
+
+
+// function resetEvent() {
+    
+//      return  document.getElementById("hello").removeChild.document.getElementById("delete-1");
+//     console.log("click");
+// };
+
+// let deleteTask = document.getElementById("delete-2");
+// deleteTask.addEventListener("click", resetEvent);
+
 
 
 
