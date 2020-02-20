@@ -2,26 +2,28 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
     background-color: black;
     color: goldenrod;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 h1{
     display: flex;
- justify-content: center;
- align-items: center;
- margin: .5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0rem;
 }
 
 #inputField{
     display: flex;
- justify-content: space-around;
- align-items: center;
- margin: .5rem 0rem;
+    justify-content: space-around;
+    align-items: center;
+    margin: .5rem 0rem;
  
 }
 
@@ -29,6 +31,9 @@ h1{
     background-color: goldenrod;
     height: 1.5rem;
     width: 20rem;
+    border-radius: 1rem;
+    padding: .3rem;
+    
 }
 
 .list_class{
@@ -40,12 +45,12 @@ h1{
 }
 
 .list, li{
- background-color: rgb(22, 22, 41);
- padding: .2rem;
- display: flex;
- justify-content: space-between;
- align-items: center;
- margin: .5rem .5rem;
+    background-color: rgb(22, 22, 41);
+    padding: .2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .5rem .5rem;
  
 }
 
@@ -56,6 +61,7 @@ button{
     padding: .1rem;
     height: 1.5rem;
     width: 10rem;
+    border-radius: 1rem;
 }
 
 
@@ -67,12 +73,15 @@ button{
         padding: .1rem;
         height: 1.5rem;
         width: 5rem;
+        border-radius: 1rem;
     }
 
     #input{
         background-color: goldenrod;
         height: 1.5rem;
-        width: 13rem;
+        width: 10rem;
+        border-radius: 1rem;
+        padding: .3rem;
     }
 }
 
