@@ -17,22 +17,42 @@ function createNewListElement( ) {
     li.appendChild(document.createTextNode(input.value));
     ul.appendChild(li);
     input.value = "";
-}
+    //appending the newly created list to the ul
+
+    let img = document.createElement("img");
+    img.src="https://res.cloudinary.com/dsipecjov/image/upload/v1582229720/Stutern/topjrvz65ugnomqzrzzo.svg";
+    img.width=10;
+    img.height=10;
+    li.appendChild(img);
+    //appending the newly created delete icon to the newly created li
+    
+    let delTask = () => {
+        li.remove();
+    };
+    //function that removes the task
+
+    let del = img;
+    del.addEventListener("click", delTask);
+    //event listner to listen for the click of the cancel icon
+
+
+};
 // creating function to add new task
+// deleting the tasks too
 
 
 function addListAfterClick() {
     if (inputLength() > 0 ) {
     createNewListElement()
     }
-}
+};
 // add task to list after click
 
 function addListAfterKeyPress() {
     if (inputLength() > 0 && event.keyCode === 13 ){
         createNewListElement()
     }
-}
+};
 //add task after keypress
 let KeyPressEvent = input.addEventListener("keypress", addListAfterKeyPress); 
 
@@ -41,11 +61,34 @@ let KeyPressEvent = input.addEventListener("keypress", addListAfterKeyPress);
 let ClickPressEvent = button.addEventListener("click", addListAfterClick);
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // get => {
     
 // document.getElementByClassName("lists").style.backgroundcolor="red";
 // }
-
 
 
 // function resetEvent() {
@@ -56,7 +99,3 @@ let ClickPressEvent = button.addEventListener("click", addListAfterClick);
 
 // let deleteTask = document.getElementById("delete-2");
 // deleteTask.addEventListener("click", resetEvent);
-
-
-
-

@@ -6,11 +6,15 @@
 
 }
 
-/* .lists{
+.list, li{
  background-color: blue;
  margin: 1rem;
  padding: .5rem;
-} */
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ 
+}
 
 
 
