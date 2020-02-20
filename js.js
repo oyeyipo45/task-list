@@ -26,6 +26,8 @@ function createNewListElement( ) {
     li.appendChild(img);
     //appending the newly created delete icon to the newly created li
     
+
+    
     let delTask = () => {
         li.remove();
     };
