@@ -20,7 +20,7 @@ function createNewListElement( ) {
     //appending the newly created list to the ul
 
     let img = document.createElement("img");
-    img.src="https://res.cloudinary.com/dsipecjov/image/upload/v1582229720/Stutern/topjrvz65ugnomqzrzzo.svg";
+    img.src="https://res.cloudinary.com/dsipecjov/image/upload/v1582274474/Stutern/bodpzqtxpuo78rzkczjs.svg";
     img.width=10;
     img.height=10;
     li.appendChild(img);
